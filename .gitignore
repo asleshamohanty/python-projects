@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 # Ignore common non-Python files
+=======
+>>>>>>> f190e92db31065ac9b365e215dcaceaf28ce78fa
 *.css
 *.html
 *.js
 *.scss
+<<<<<<< HEAD
 *.json
 *.xml
 *.md
@@ -18,3 +22,5 @@ build/
 .vscode/
 .idea/
 *.iml
+=======
+>>>>>>> f190e92db31065ac9b365e215dcaceaf28ce78fa
