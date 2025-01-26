@@ -1,0 +1,20 @@
+# Ignore common non-Python files
+*.css
+*.html
+*.js
+*.scss
+*.json
+*.xml
+*.md
+*.txt
+*.log
+
+# Ignore directories commonly used for front-end frameworks
+node_modules/
+dist/
+build/
+
+# Ignore IDE or editor specific files
+.vscode/
+.idea/
+*.iml
