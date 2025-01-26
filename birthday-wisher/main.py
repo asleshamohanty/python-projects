@@ -3,8 +3,8 @@ import pandas
 import random
 import datetime as dt
 
-my_email = "aslesham.social@gmail.com"
-password = "qhes jomr fegi aeka"
+my_email = ""
+password = ""
 
 data = pandas.read_csv("birthdays.csv")
 month = data['month'].tolist()

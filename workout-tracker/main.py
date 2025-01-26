@@ -7,10 +7,10 @@ WEIGHT = 45
 HEIGHT = 155
 AGE = 18
 
-basic = HTTPBasicAuth('aslesham.social@gmail.com', 'ekta@123456')
+basic = HTTPBasicAuth('yourmail', 'password')
 
-os.environ["APP_ID"] = "ce13979c"
-os.environ["APP_KEY"] = "8583427ed0b5bc05a320d6f86dcbd54a"
+os.environ["APP_ID"] = "yourapiid"
+os.environ["APP_KEY"] = "yourapikey"
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 sheety_endpoint = "https://api.sheety.co/55f9227d8d1fb79ef9a5ce1e93510660/myWorkoutTracker/sheet1"

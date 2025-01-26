@@ -10,8 +10,8 @@ date = input("Which day do you want to travel back to? Enter in this format: YYY
 BILLBOARD_URL = f"https://www.billboard.com/charts/hot-100/{date}/"
 OAUTH_TOKEN_URL= 'https://accounts.spotify.com/api/token'
 spotify_oath_params = {
-    "client_id": "20ccd357db48434abf49097407a91658",
-    "client_secret": "191cd89b87b5442a8e9bf0d68f25642d",
+    "client_id": "",
+    "client_secret": "",
     "redirect_uri": "http://example.com",
 }
 
@@ -29,15 +29,15 @@ sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         scope="playlist-modify-private",
         redirect_uri="http://example.com",
-        client_id="20ccd357db48434abf49097407a91658",
-        client_secret="191cd89b87b5442a8e9bf0d68f25642d",
+        client_id="",
+        client_secret="",
         show_dialog=True,
         cache_path="token.txt",
         username="Musical Time Machine",
     )
 )
 
-sp_oauth = oauth2.SpotifyOAuth("20ccd357db48434abf49097407a91658","191cd89b87b5442a8e9bf0d68f25642d","http://example.com",scope="playlist-modify-private",cache_path="SpotifyProject/token.txt", show_dialog=True, username="Musical Time Machine" )
+sp_oauth = oauth2.SpotifyOAuth("","","http://example.com",scope="playlist-modify-private",cache_path="SpotifyProject/token.txt", show_dialog=True, username="Musical Time Machine" )
 auth_url = sp_oauth.get_auth_response()
 token = sp_oauth.get_cached_token()
 

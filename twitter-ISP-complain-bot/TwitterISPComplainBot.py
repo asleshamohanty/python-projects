@@ -5,9 +5,9 @@ import time
 
 PROMISED_UP = 200
 PROMISED_DOWN = 200
-TWITTER_EMAIL = "maildummy101108@gmail.com"
-TWITTER_USERNAME = "DummyMail628318"
-TWITTER_PASSWORD = "Nps@12345"
+TWITTER_EMAIL = "samplemail"
+TWITTER_USERNAME = "username"
+TWITTER_PASSWORD = "password"
 
 
 options = webdriver.ChromeOptions()

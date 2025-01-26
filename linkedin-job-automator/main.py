@@ -5,16 +5,14 @@ from selenium.common.exceptions import NoSuchElementException
 import time
 
 PHONE = 1234567890
-EMAIL = "maildummy101108@gmail.com"
-PWD = "npshsr@123"
+EMAIL = "@gmail.com"
+PWD = ""
 
 def abort_application():
-    # Click Close Button
     close_button = driver.find_element(by=By.CLASS_NAME, value="artdeco-modal__dismiss")
     close_button.click()
 
     time.sleep(2)
-    # Click Discard Button
     discard_button = driver.find_elements(by=By.CLASS_NAME, value="artdeco-modal__confirm-dialog-btn")[1]
     discard_button.click()
 
@@ -35,17 +33,6 @@ password = driver.find_element(By.NAME, "session_password")
 password.send_keys(PWD, Keys.TAB)
 password.send_keys(Keys.ENTER)
 
-# time.sleep(5)
-# apply_button = driver.find_element(by=By.CSS_SELECTOR, value=".jobs-s-apply button")
-# apply_button.click()
-#
-# time.sleep(5)
-# phone = driver.find_element(by=By.CSS_SELECTOR, value="input[id*=phoneNumber]")
-# if phone.text == "":
-#     phone.send_keys(PHONE)
-#
-# submit_button = driver.find_element(by=By.CSS_SELECTOR, value="footer button")
-# submit_button.click()
 
 time.sleep(5)
 all_listings = driver.find_elements(by=By.CSS_SELECTOR, value=".job-card-container--clickable")
